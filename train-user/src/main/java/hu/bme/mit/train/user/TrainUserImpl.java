@@ -32,6 +32,7 @@ public class TrainUserImpl implements TrainUser {
 		//breaks the train
 		overrideJoystickPosition(-1);
 		//modositasok
+		overrideJoystickPosition("string");
 	}
 
 }
