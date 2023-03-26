@@ -59,5 +59,10 @@ public class TrainSystemTest {
 		controller.followSpeed();
 		Assert.assertEquals(4, controller.getReferenceSpeed());
 	}
-	
+
+	@Test
+	public void addTachografTest(){
+	controller.addToTachograf();
+	Assert.assertNotNull(controller.getTacho());
+	}
 }
