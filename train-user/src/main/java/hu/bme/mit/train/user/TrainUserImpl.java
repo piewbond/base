@@ -32,7 +32,7 @@ public class TrainUserImpl implements TrainUser {
 		//breaks the train
 		//modositasok
 		if (getAlarmFlag())
-			overrideJoystickPosition(-1);
+			overrideJoystickPosition(-5);
 	}
 
 }

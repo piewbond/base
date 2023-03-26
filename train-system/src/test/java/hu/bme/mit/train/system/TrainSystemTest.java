@@ -52,11 +52,12 @@ public class TrainSystemTest {
 
 	@Test
 	public void emergencyBreak() {
+		sensor.overrideSpeedLimit(4);
 		user.overrideJoystickPosition(4);
 		controller.followSpeed();
 		user.breakEmergency();
 		controller.followSpeed();
-		Assert.assertEquals(0, controller.getReferenceSpeed());
+		Assert.assertEquals(4, controller.getReferenceSpeed());
 	}
 	
 }
