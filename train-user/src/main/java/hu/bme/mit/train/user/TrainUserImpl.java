@@ -31,6 +31,7 @@ public class TrainUserImpl implements TrainUser {
 	public void breakEmergency() {
 		//breaks the train
 		overrideJoystickPosition(-1);
+		//modositasok
 	}
 
 }
